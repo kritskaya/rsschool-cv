@@ -7,7 +7,35 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+ * {
+	border: 1px solid black;
+ }
 
 body {
+	height: 100vh;
+	padding: 50px 0;
 	font-family: 'Raleway', sans-serif;
+	
 }
+
+.container {
+	/* width: 1200px; */
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid black; */
+}
+
+.header {
+	height: 60px;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.footer {
+	height: 60px;
+}
+
