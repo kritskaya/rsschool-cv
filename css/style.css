@@ -34,6 +34,18 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+section {
+	padding: 80px 50px;
+}
+
+.section-header {
+	margin: 0 auto;
+	margin-bottom: 80px;
+	font-family: 'League Spartan';
+	font-size: 60px;
+	font-style: normal;
+}
+
 .container {
 	height: 100%;
 	margin: 0 auto;
@@ -52,10 +64,6 @@ body {
 	display: flex;
 }
 
-.header-nav-item {
-	
-}
-
 .header-nav-link {
 	display: inline-block;
 	padding: 20px 30px;
@@ -70,6 +78,7 @@ body {
 
 .hero {
 	height: 100vh;
+	padding: 80px 0;
 	background: url(../assets/png/background.png) no-repeat;
 	background-color: #1a1a1a;
 	background-size: cover;
@@ -122,6 +131,35 @@ body {
 	font-weight: bold;
 	color: #000;
 	background-color: var(--yellow-light);
+}
+
+#about {
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid black; */
+}
+
+#about > .content {
+	display: flex;
+	/* border: 1px solid black; */
+}
+
+#about > .content > .img {
+	margin-right: 40px;
+	/* border: 1px solid black; */
+}
+
+#about .content-text {
+	font-size: 18px;
+	line-height: 36px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* border: 1px solid black; */
+}
+
+.content-text p {
+	margin-bottom: 15px;
 }
 
 .footer {
