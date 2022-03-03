@@ -193,7 +193,7 @@ section {
 }
 
 .skills-item:hover {
-	outline: 1px solid var(--blue-light);
+	/* outline: 1px solid var(--blue-light); */
 }
 
 .skills-item-img {
@@ -225,6 +225,45 @@ section {
 	width: 6px;
 	height: 6px;
 	background-color: var(--blue-light);
+}
+
+#code {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.code-content {
+	font-size: 18px;
+}
+
+#code code {
+	padding: 50px 80px;
+}
+
+pre code.hljs { 
+	display:block;
+	overflow-x:auto;
+}
+
+.hljs{
+	background:#1e1e1e;
+	color:#dcdcdc;
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-name,
+.hljs-symbol {
+	color:#6699ff;
+}
+
+.hljs-variable {
+	color:#82f8fc;
+}
+
+.hljs-string {
+	color:#ffe680;
 }
 
 .footer {

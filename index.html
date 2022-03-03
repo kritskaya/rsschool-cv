@@ -91,6 +91,32 @@
 				</div>
 			</section>
 			
+			<section class="code" id="code">
+				<h2 class="section-header">Code</h2>
+				<div class="code-content">
+<pre><code>const portfolioBtnContainer = document.querySelector(".portfolio-btns");
+const portfolioBtns = document.querySelectorAll(".portfolio .btn");
+const images = document.querySelectorAll(".portfolio-img");
+
+portfolioBtnContainer.addEventListener("click", changeImage);
+
+function changeImage(event) {
+	if (event.target.classList.contains("btn")) {
+		let clicked = event.target;
+
+		portfolioBtns.forEach((elem) => {
+			elem.classList.add("btn-transparent");
+			clicked.classList.remove("btn-transparent");
+		});
+
+		images.forEach((img, index) => {
+			img.src = `./assets/img/${clicked.dataset.season}/${index + 1}.jpg`;
+		});
+	}
+}
+</code></pre>
+				</div>
+			</section>
 		</main>
 
 		<footer class="footer">
@@ -141,5 +167,8 @@
 			</div>
 		</footer>
 	</div>
+
+	<script src="./js/highlight.min.js"></script>
+	<script> hljs.highlightAll(); </script>
 </body>
 </html>
