@@ -56,6 +56,7 @@ section {
 
 .header {
 	position: fixed;
+	z-index: 100;
 	width: 100%;
 	border-bottom: 5px solid var(--yellow-light);
 	background-color: #000;
@@ -108,7 +109,6 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* border: 1px solid white; */
 }
 
 .title-name {
@@ -137,17 +137,14 @@ section {
 #about {
 	display: flex;
 	flex-direction: column;
-	/* border: 1px solid black; */
 }
 
 #about > .content {
 	display: flex;
-	/* border: 1px solid black; */
 }
 
 #about > .content > .img {
 	margin-right: 40px;
-	/* border: 1px solid black; */
 }
 
 #about .content-text {
@@ -157,7 +154,6 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	text-align: justify;
-	/* border: 1px solid black; */
 }
 
 .content-text p {
@@ -192,10 +188,6 @@ section {
 	margin-right: 0;
 }
 
-.skills-item:hover {
-	/* outline: 1px solid var(--blue-light); */
-}
-
 .skills-item-img {
 	width: 50px;
 	margin-bottom: 30px;
@@ -226,6 +218,8 @@ section {
 	height: 6px;
 	background-color: var(--blue-light);
 }
+
+/* CODE SECTION */
 
 #code {
 	display: flex;
@@ -266,7 +260,7 @@ pre code.hljs {
 	color:#ffe680;
 }
 
-/* EDUCATION */
+/* EDUCATION SECTION*/
 
 #education {
 	display: flex;
@@ -294,7 +288,6 @@ pre code.hljs {
 	justify-content: center;
 	font-size: 18px;
 	background-color: #fff;
-	/* box-shadow: 0 1px 12px rgb(0 0 0 / 10%); */
 }
 
 .education-item p {
@@ -473,7 +466,6 @@ pre code.hljs {
 .copyright {
 	display: flex;
 	align-items: center;
-	/* border: 1px solid white; */
 }
 
 .copyright > span:first-child {
@@ -483,16 +475,13 @@ pre code.hljs {
 .github {
 	display: flex;
 	align-items: center;
-	/* border: 1px solid white; */
 }
 
 .github a {
 	color: #fff;
 }
 
-.rs-school {
-	/* border: 1px solid white; */
-}
+
 
 .rs-school img {
 	width: 100px;
