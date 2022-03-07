@@ -75,6 +75,12 @@ section {
 	color: #fff;
 }
 
+.header-nav-link:hover {
+	padding-bottom: 13px;
+	border-bottom: 3px solid var(--turquoise-light);
+	/* transition: border 0.7s; */
+}
+
 .main {
 	flex-grow: 1;
 }
