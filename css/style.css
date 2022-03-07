@@ -27,6 +27,10 @@ a {
 	--grey-light: #f2f2f2;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	height: 100vh;
 	font-family: 'Raleway', sans-serif;
