@@ -373,7 +373,7 @@ pre code.hljs {
 	position: relative;
 	width: 900px;
 	height: 320px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	background-color: #e6e6e6;
 	border-radius: 4px;
 
@@ -596,11 +596,71 @@ pre code.hljs {
 	color: #fff;
 }
 
-
-
 .rs-school img {
 	width: 100px;
 	filter: invert(100%);
+}
+
+/* ANIMATION */
+
+.animated {
+	opacity: 0;
+}
+
+.animated.show {
+	opacity: 1;
+	transition: opacity 0.7s;
+}
+
+.education-item:nth-child(even).show {
+	animation: fade-right 1s;
+}
+
+@keyframes fade-right{
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}	
+}
+
+.education-item:nth-child(odd).show {
+	animation: fade-left 1s;
+}
+
+@keyframes fade-left {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}	
+}
+
+.skills-item:nth-child(1).show {
+	animation: fade-bottom 0.8s;
+}
+
+.skills-item:nth-child(2).show {
+	animation: fade-bottom 1.2s;
+}
+
+.skills-item:nth-child(3).show {
+	animation: fade-bottom 1.6s;
+}
+
+@keyframes fade-bottom {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+.projects-item.show {
+	animation: fade-bottom 1s;
 }
 
 

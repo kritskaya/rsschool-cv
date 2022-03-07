@@ -38,10 +38,10 @@
 				<h2 class="section-header">About Me</h2>
 				
 				<div class="content">
-					<div class="img">
+					<div class="img animated">
 						<img src="./assets/img/code.jpg" alt="code">
 					</div>
-					<div class="content-text">
+					<div class="content-text animated">
 						<p>My current job related with working on a computer with different documents. I'm ordinary office worker. So boring! And I'm not happy with it.</p>
 						<p>Programming is an opportunity to create future. And I want to be a part of this future and realize myself in cool projects.</p>
 						<p>So I decided to take matters in my own hands and do what I like to do. I spent a lot of time learning English and programming languages. My main goal to become high-level web-developer.</p>
@@ -54,27 +54,27 @@
 				<h2 class="section-header">Education and courses</h2>
 				<div class="education-content">
 					<ul class="education-list">
-						<li class="education-item">
+						<li class="education-item animated">
 							<p>Vitebsk State Politechnic College<br>(Programming CAD Systems)</p>
 							<p>2001-2005</p>
 						</li>
-						<li class="education-item">
+						<li class="education-item animated fade-in">
 							<p>Vitebsk State University of Technology<br>(Marketing faculty)</p>
 							<p>2005-2011</p>
 						</li>
-						<li class="education-item">
+						<li class="education-item animated">
 							<p>JavaRush (30 levels)</p>
 							<p>2020</p>
 						</li>
-						<li class="education-item">
+						<li class="education-item animated fade-in">
 							<p>Introduction to CSS3 on Coursera</p>
 							<p>2020</p>
 						</li>
-						<li class="education-item">
+						<li class="education-item animated">
 							<p>Introduction To Java (EPAM Systems)</p>
 							<p>2021</p>
 						</li>
-						<li class="education-item">
+						<li class="education-item animated fade-in">
 							<p>JS / FRONT-END. STAGE 0 on RS School</p>
 							<p>2022</p>
 						</li>
@@ -84,7 +84,7 @@
 
 			<section class="languages" id="languages">
 				<h2 class="section-header">Languages</h2>
-				<div class="languages-content">
+				<div class="languages-content animated">
 					<ul class="languages-list">
 						<li class="languages-item"><strong>Russian:</strong> native</li>
 						<li class="languages-item"><strong>English acording to EPAM test:</strong> A2</li>
@@ -100,7 +100,7 @@
 				<h2 class="section-header">Skills</h2>
 				<div class="skills-content">
 					<ul class="skills-list">
-						<li class="skills-item">
+						<li class="skills-item animated">
 							<img src="./assets/svg/code.svg" alt="code" class="skills-item-img">
 							<h3 class="skill-header">Languages</h3>
 							<ul class="skill-list">
@@ -112,7 +112,7 @@
 								<li class="skill-item">SQL (MySQL)</li>
 							</ul>
 						</li>
-						<li class="skills-item">
+						<li class="skills-item animated">
 							<img src="./assets/svg/framework.svg" alt="framework" class="skills-item-img">
 							<h3 class="skill-header">Frameworks, libraries</h3>
 							<ul class="skill-list">
@@ -122,7 +122,7 @@
 								<li class="skill-item">Yii2</li>
 							</ul>
 						</li>
-						<li class="skills-item">
+						<li class="skills-item animated">
 							<img src="./assets/svg/tool.svg" alt="tool" class="skills-item-img">
 							<h3 class="skill-header">Developer Tools</h3>
 							<ul class="skill-list">
@@ -139,7 +139,7 @@
 			
 			<section class="code" id="code">
 				<h2 class="section-header">Code</h2>
-				<div class="code-content">
+				<div class="code-content animated">
 <pre><code>const portfolioBtnContainer = document.querySelector(".portfolio-btns");
 const portfolioBtns = document.querySelectorAll(".portfolio .btn");
 const images = document.querySelectorAll(".portfolio-img");
@@ -168,7 +168,7 @@ function changeImage(event) {
 				<h2 class="section-header">Projects</h2>
 				<div class="projects-content">
 					<ul class="projects-list">
-						<li class="projects-item">
+						<li class="projects-item animated">
 							<img src="./assets//img/projects/portfolio-project.jpg" alt="project" class="project-img">
 							<div class="project-content">
 								<h3 class="project-name">Portfolio</h3>
@@ -186,7 +186,7 @@ function changeImage(event) {
 								<a href="https://kritskaya.github.io/rs-school-stage0/portfolio/" class="project-link">Go to the project</a>
 							</div>
 						</li>
-						<li class="projects-item">
+						<li class="projects-item animated">
 							<img src="./assets//img/projects/audio-player.jpg" alt="project" class="project-img">
 							<div class="project-content">
 								<h3 class="project-name">Audio player</h3>
@@ -203,7 +203,7 @@ function changeImage(event) {
 								<a href="https://kritskaya.github.io/rs-school-stage0/portfolio/" class="project-link">Go to the project</a>
 							</div>
 						</li>
-						<li class="projects-item">
+						<li class="projects-item animated">
 							<img src="./assets//img/projects/gallery.jpg" alt="project" class="project-img">
 							<div class="project-content">
 								<h3 class="project-name">Gallery</h3>
@@ -218,7 +218,7 @@ function changeImage(event) {
 								<a href="https://kritskaya.github.io/rs-school-stage0/portfolio/" class="project-link">Go to the project</a>
 							</div>
 						</li>
-						<li class="projects-item">
+						<li class="projects-item animated">
 							<img src="./assets//img/projects/memory-game.jpg" alt="project" class="project-img">
 							<div class="project-content">
 								<h3 class="project-name">Memory game</h3>
@@ -293,5 +293,7 @@ function changeImage(event) {
 
 	<script src="./js/highlight.min.js"></script>
 	<script> hljs.highlightAll(); </script>
+	
+	<script type="module" src="./js/index.js"></script>
 </body>
 </html>
