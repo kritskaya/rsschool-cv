@@ -8,6 +8,292 @@
 	<title>CV - Tatyana Kritskaya</title>
 </head>
 <body>
+	<div class="container">
+		<header class="header">
+			<nav class="header-nav">
+				<ul class="header-nav-list">
+					<li class="header-nav-item"><a href="#about" class="header-nav-link">About me</a></li>
+					<li class="header-nav-item"><a href="#education" class="header-nav-link">Education</a></li>
+					<li class="header-nav-item"><a href="#languages" class="header-nav-link">Languages</a></li>
+					<li class="header-nav-item"><a href="#skills" class="header-nav-link">Skills</a></li>
+					<li class="header-nav-item"><a href="#code" class="header-nav-link">Code Example</a></li>
+					<li class="header-nav-item"><a href="#projects" class="header-nav-link">Projects</a></li>
+					<li class="header-nav-item"><a href="#contacts" class="header-nav-link">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main class="main">
+			<section class="hero">
+				<div class="logo">
+					<img src="./assets/img/logo.jpg" alt="logo" class="logo-img">
+				</div>
+				<div class="title">
+					<h1 class="title-name"><span>T</span>atyana <span>K</span>ritskaya</h1>
+					<p class="title-description">Front-End Developer</p>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<h2 class="section-header">About Me</h2>
+				
+				<div class="content">
+					<div class="img animated">
+						<img src="./assets/img/code.jpg" alt="code">
+					</div>
+					<div class="content-text animated">
+						<p>My current job related with working on a computer with different documents. I'm ordinary office worker. So boring! And I'm not happy with it.</p>
+						<p>Programming is an opportunity to create future. And I want to be a part of this future and realize myself in cool projects.</p>
+						<p>So I decided to take matters in my own hands and do what I like to do. I spent a lot of time learning English and programming languages. My main goal to become high-level web-developer.</p>
+						<p>It fails only when you don't try!</p>
+					</div>	
+				</div>
+			</section>
+
+			<section class="education" id="education">
+				<h2 class="section-header">Education and courses</h2>
+				<div class="education-content">
+					<ul class="education-list">
+						<li class="education-item animated">
+							<p>Vitebsk State Politechnic College<br>(Programming CAD Systems)</p>
+							<p>2001-2005</p>
+						</li>
+						<li class="education-item animated fade-in">
+							<p>Vitebsk State University of Technology<br>(Marketing faculty)</p>
+							<p>2005-2011</p>
+						</li>
+						<li class="education-item animated">
+							<p>JavaRush (30 levels)</p>
+							<p>2020</p>
+						</li>
+						<li class="education-item animated fade-in">
+							<p>Introduction to CSS3 on Coursera</p>
+							<p>2020</p>
+						</li>
+						<li class="education-item animated">
+							<p>Introduction To Java (EPAM Systems)</p>
+							<p>2021</p>
+						</li>
+						<li class="education-item animated fade-in">
+							<p>JS / FRONT-END. STAGE 0 on RS School</p>
+							<p>2022</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="languages" id="languages">
+				<h2 class="section-header">Languages</h2>
+				<div class="languages-content animated">
+					<ul class="languages-list">
+						<li class="languages-item"><strong>Russian:</strong> native</li>
+						<li class="languages-item"><strong>English acording to EPAM test:</strong> A2</li>
+						<li class="languages-item item-efset"><strong>English acording to efset.org: </strong><img src="./assets/img/efset-result.jpg" alt="efset" class="efset-img"></li>
+					</ul>
+					<!-- <div class="efset">
+						<img src="./assets/img/efset-result.jpg" alt="efset" class="efset-img">
+					</div> -->
+				</div>
+			</section>
+
+			<section class="skills" id ="skills">
+				<h2 class="section-header">Skills</h2>
+				<div class="skills-content">
+					<ul class="skills-list">
+						<li class="skills-item animated">
+							<img src="./assets/svg/code.svg" alt="code" class="skills-item-img">
+							<h3 class="skill-header">Languages</h3>
+							<ul class="skill-list">
+								<li class="skill-item">HTML</li>
+								<li class="skill-item">CSS</li>
+								<li class="skill-item">JavaScript</li>
+								<li class="skill-item">Java Core</li>
+								<li class="skill-item">PHP (Basics)</li>
+								<li class="skill-item">SQL (MySQL)</li>
+							</ul>
+						</li>
+						<li class="skills-item animated">
+							<img src="./assets/svg/framework.svg" alt="framework" class="skills-item-img">
+							<h3 class="skill-header">Frameworks, libraries</h3>
+							<ul class="skill-list">
+								<li class="skill-item">Bootstrap</li>
+								<li class="skill-item">JQuery</li>
+								<li class="skill-item">Log4J</li>
+								<li class="skill-item">Yii2</li>
+							</ul>
+						</li>
+						<li class="skills-item animated">
+							<img src="./assets/svg/tool.svg" alt="tool" class="skills-item-img">
+							<h3 class="skill-header">Developer Tools</h3>
+							<ul class="skill-list">
+								<li class="skill-item">VS Code</li>
+								<li class="skill-item">Eclipse</li>
+								<li class="skill-item">Git (GitHub)</li>
+								<li class="skill-item">Open Server</li>
+								<li class="skill-item">Photoshop</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section class="code" id="code">
+				<h2 class="section-header">Code</h2>
+				<div class="code-content animated">
+<pre><code>const portfolioBtnContainer = document.querySelector(".portfolio-btns");
+const portfolioBtns = document.querySelectorAll(".portfolio .btn");
+const images = document.querySelectorAll(".portfolio-img");
+
+portfolioBtnContainer.addEventListener("click", changeImage);
+
+function changeImage(event) {
+	if (event.target.classList.contains("btn")) {
+		let clicked = event.target;
+
+		portfolioBtns.forEach((elem) => {
+			elem.classList.add("btn-transparent");
+			clicked.classList.remove("btn-transparent");
+		});
+
+		images.forEach((img, index) => {
+			img.src = `./assets/img/${clicked.dataset.season}/${index + 1}.jpg`;
+		});
+	}
+}
+</code></pre>
+				</div>
+			</section>
+
+			<section class="projects" id="projects">
+				<h2 class="section-header">Projects</h2>
+				<div class="projects-content">
+					<ul class="projects-list">
+						<li class="projects-item animated">
+							<img src="./assets//img/projects/portfolio-project.jpg" alt="project" class="project-img">
+							<div class="project-content">
+								<h3 class="project-name">Portfolio</h3>
+								<div class="project-technologies">
+									<h4>Used technologies:</h4>
+									<p>HTML, CSS, JS</p>
+								</div>
+								<p class="project-description">
+									Main features:<br>
+									- adaptive for tablet and mobile devices<br>
+									- project has theme switch button<br>
+									- language menu<br>
+									- last user selection restored after reload
+								</p>
+								<a href="https://kritskaya.github.io/rs-school-stage0/portfolio/" class="project-link">Go to the project</a>
+							</div>
+						</li>
+						<li class="projects-item animated">
+							<img src="./assets//img/projects/audio-player.jpg" alt="project" class="project-img">
+							<div class="project-content">
+								<h3 class="project-name">Audio player</h3>
+								<div class="project-technologies">
+									<h4>Used technologies:</h4>
+									<p>HTML, CSS, JS</p>
+								</div>
+								<p class="project-description">
+									Main features:<br>
+									- pause/play audio track<br>
+									- go to next/previous track<br>
+									- all tracks are in the playlist
+								</p>
+								<a href="https://kritskaya.github.io/rs-school-stage0/portfolio/" class="project-link">Go to the project</a>
+							</div>
+						</li>
+						<li class="projects-item animated">
+							<img src="./assets//img/projects/gallery.jpg" alt="project" class="project-img">
+							<div class="project-content">
+								<h3 class="project-name">Gallery</h3>
+								<div class="project-technologies">
+									<h4>Used technologies:</h4>
+									<p>HTML, CSS, JS</p>
+								</div>
+								<p class="project-description">
+									Main features: <br>
+									- search was implemented using Unsplash API. <br>
+									- project is adaptive for tablet and mobile devices</p>
+								<a href="https://kritskaya.github.io/rs-school-stage0/portfolio/" class="project-link">Go to the project</a>
+							</div>
+						</li>
+						<li class="projects-item animated">
+							<img src="./assets//img/projects/memory-game.jpg" alt="project" class="project-img">
+							<div class="project-content">
+								<h3 class="project-name">Memory game</h3>
+								<div class="project-technologies">
+									<h4>Used technologies:</h4>
+									<p>HTML, CSS, JS</p>
+								</div>
+								<p class="project-description">
+									Main features: <br>
+									- studing in RS School was an inspiration for the game cards images.<br>
+									- the game has a last 10 games result table 
+								</p>
+								<a href="https://kritskaya.github.io/rs-school-stage0/portfolio/" class="project-link">Go to the project</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			
+		</main>
+
+
+		<footer class="footer">
+			<section class="contacts" id="contacts">
+				<h2 class="section-header">Contacts</h2>
+				<div class="contacts-content">
+					<ul class="contacts-list">
+						<li class="contacts-item">
+							<a href="#" class="contacts-link">
+								<img src="./assets/png/location.png" alt="location" class="contacts-img img-location">
+							</a>
+							<p>Vitebsk, Belarus</p>
+						</li>
+						<li class="contacts-item">
+							<a href="#" class="contacts-link">
+								<img src="./assets/png/email.png" alt="email" class="contacts-img img-email">
+							</a>
+							<p>kritskaya.tatjana@gmail.com</p>
+						</li>
+						<li class="contacts-item">
+							<a href="#" class="contacts-link">
+								<img src="./assets/png/telegram.png" alt="telegram" class="contacts-img img-telegram">
+							</a>
+							<p>kritskaya_t</p>
+						</li>
+						<li class="contacts-item">
+							<a href="#" class="contacts-link">
+								<img src="./assets/png/discord.png" alt="discord" class="contacts-img img-discord">
+							</a>
+							<p>kritskaya#5623</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="footer-content">
+				<div class="copyright">
+					<span class="author">Tatyana Kritskaya</span>
+					<span class="creation">© 2022</span>
+				</div>
+				<div class="github">
+					<a href="https://github.com/kritskaya">GitHub</a>
+				</div>
+				<div class="rs-school">
+					<a href="https://rs.school/js/">
+						<img src="./assets/svg/rs_school_js.svg" alt="rs-school">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="./js/highlight.min.js"></script>
+	<script> hljs.highlightAll(); </script>
 	
+	<script type="module" src="./js/index.js"></script>
 </body>
 </html>
