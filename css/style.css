@@ -67,18 +67,22 @@ section {
 	display: flex;
 }
 
+.header-nav-item {
+	position: relative;
+}
+
 .header-nav-link {
-	display: inline-block;
+	position: relative;
+	display: flex;
+	width: 100%;
 	padding: 20px 30px;
 	font-size: 18px;
-	/* font-weight: bold; */
 	color: #fff;
 }
 
 .header-nav-link:hover {
-	padding-bottom: 13px;
-	border-bottom: 3px solid var(--turquoise-light);
-	/* transition: border 0.7s; */
+	background-color: var(--yellow-light);
+	transition: background 1s;
 }
 
 .main {
