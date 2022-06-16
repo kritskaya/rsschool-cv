@@ -379,18 +379,14 @@ pre code.hljs {
 
 .projects-list {
 	display: grid;
-	/* grid-template-columns: 1fr 1fr; */
 	grid-gap: 40px;
 }
 
 .projects-item {
 	position: relative;
 	width: 900px;
-	/* height: 320px; */
-	/* overflow: hidden; */
 	background-color: #e6e6e6;
 	border-radius: 4px;
-
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 50px;
@@ -399,32 +395,16 @@ pre code.hljs {
 .project-img {
 	width: 400px;
 	height: 250px;
-	/* border: 5px solid #e6e6e6; */
 	margin-left: 10px;
 	border-radius: 4px;
 	justify-self: end;
+	object-fit: cover;
 }
 
 .project-content {
-	/* position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	padding: 10px 30px;
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0.8);
-	transform: translateY(100%);
-	transition: transform 0.7s; */
 	order: -1;
 	display: flex;
 	flex-direction: column;
-}
-
-.projects-item:hover .project-content {
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center;
-	transform: translateY(0%); */
 }
 
 .project-name {
@@ -438,7 +418,6 @@ pre code.hljs {
 }
 
 .project-description {
-	/* margin-bottom: 20px; */
 	flex-grow: 1;
 }
 
